@@ -8,9 +8,6 @@ public class SelectionSort {
         // Outer loop for iterating through the array elements
         for (int i = 0; i < n; i++) {
 
-            // Set the current element as the minimum
-            int min = arr[i];
-
             // Initialize the index of the minimum element
             int minIndex = i;
 
@@ -18,8 +15,7 @@ public class SelectionSort {
             for (int j = i; j < n; j++) {
 
                 // Update the minimum element and its index if a smaller element is found
-                if (min > arr[j]) {
-                    min = arr[j];
+                if (arr[minIndex] > arr[j]) {
                     minIndex = j;
                 }
             }
